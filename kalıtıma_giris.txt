@@ -1,0 +1,7 @@
+Birtakım özelliklere sahip bir classımız olsun. Bu özellikleri, bu classtan oluşturduğumuz classlarda da kullanacaksak eğer ilk classtaki kodları yeni classa yazmak yerine yeni classı o üst classtan kalıtırız. Bu şekilde bu iç içe devam edebilir.
+
+Örneğin canlılar classından insanlar, bitkiler ve hayvanlar classları türetebilirim.
+
+Kalıtım, yazdığımız kod sayısını azaltmaya ve ortak noktaları bulunanları ortak alanda toplamamızı sağlar.
+
+Dart dilinde yazdığımız tüm classlar en temelinde object classından türüyor.
