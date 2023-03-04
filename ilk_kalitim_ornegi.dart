@@ -20,14 +20,14 @@ void main(List<String> args) {
 
 void test(User kullanici) {
   kullanici
-      .gririsYap(); // polimorfizm (çok biçimcilik): user gibi tek bir veri türü yolluyoruz ama girilen parametreye göre farklı türlere de giriyor
+      .girisYap(); // polimorfizm (çok biçimcilik): user gibi tek bir veri türü yolluyoruz ama girilen parametreye göre farklı türlere de giriyor
 }
 
 class User {
   String email = " ";
   String password = " ";
 
-  void gririsYap() {
+  void girisYap() {
     print("Parent User giriş yaptı");
   }
 }
@@ -43,7 +43,7 @@ class NormalUser extends User {
     super.gririsYap();
   } */
   @override // Bu sınıfın üst sınıfında tanımlı fonksiyonu tekrar yazmamızı sağlar.
-  void gririsYap() {
+  void girisYap() {
     print("Normal user giriş yaptı.");
   }
 }
@@ -54,7 +54,7 @@ class AdminUser extends User {
   }
 
   @override
-  void gririsYap() {
+  void girisYap() {
     print("Admin user giriş yaptı.");
   }
 }
@@ -65,7 +65,7 @@ class ReadOnlyUser extends User {
   }
 
   @override
-  void gririsYap() {
+  void girisYap() {
     print("Readonly user giriş yaptı.");
   }
 }
